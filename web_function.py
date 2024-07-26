@@ -7,7 +7,7 @@ import streamlit as st
 @st.cache_data
 def load_data():
     #Load Dataset
-    data = pd.read_csv('C:\KULIAH\Semester 6\Proyek Datamining\Web_Prediksi Penyakit hati/hati.csv')
+    data = pd.read_csv('hati.csv')
     x = data[["bp", "sg", "al", "su", "rbc", "pc", "pcc", "ba", "bgr", "bu", "sc", "sod", "pot", "hemo", "pcv", "wc", "rc", "htn", "dm", "cad", "appet", "pe", "ane"]]
     y = data[['classification']]
     return data, x, y
